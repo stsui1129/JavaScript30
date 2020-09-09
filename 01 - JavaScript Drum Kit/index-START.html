@@ -64,7 +64,7 @@
     if (!audio) return; //stops the function from running altogether
 
     key.classList.add('playing');
-    audio.currentTime = 0; //rewind to the start
+    audio.currentTime = 0; //rewind to the start. this prevents delay of sound if we keep hitting the key
     audio.play();
   }
    function removeTransition(e) {
